@@ -42,14 +42,44 @@ input, button {
 
 #modal {
     background-color: rgb(73, 73, 73);
+    display: flex;
+    justify-content: center;
+}
+
+#affiche {
+    background-color: rgb(41, 41, 41);
+    color: #fff;
+    border: 3px solid;
 }
 
 #titre {
     font-family: "Pokemon_Solid";
+    color: rgb(2, 80, 2);
+}
+
+
+
+#capture {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(2, 80, 2);
 }
 
 .modal-header {
     display: flex;
     justify-content: center;
     flex-direction: column;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 10px;
+}
+
+#image {
+    background-color: rgb(2, 80, 2);
+    /* padding: 10px; */
 }

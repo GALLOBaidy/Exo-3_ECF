@@ -1,51 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mini Pokedex</title>
     <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
-    crossorigin="anonymous"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="styles/style.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
     <header>
-        <h1>Le Mini Pokedex</h1>
+      <h1>Le Mini Pokedex</h1>
     </header>
     <main>
-        <section id="title">
-            <label for="" class="col-4">ID du Pokémon (de 1 à 893)</label>
-            <input class="col-1" type="text" name="" id="search" inputmode="numeric">
-            <button id="btn" class="col-2">Chercher</button>
-        </section>
+      <section id="title">
+        <label for="" class="col-4">ID du Pokémon (de 1 à 893)</label>
+        <input
+          class="col-1"
+          type="text"
+          name=""
+          id="search"
+          inputmode="numeric"
+        />
+        <button id="btn" class="col-2">Chercher</button>
+      </section>
 
-        <section id="modal">
-            <div class="affiche">
-                <div class="modal-header">
-                    <h3 id="titre"></h3>
-                    <h5 id="capture"></h5>
-                    <p id="famille"></p>
-                </div>
-                <div class="modal-body">
-                    <p id="description"></p>
-                    <img id="image" src="" alt="">
-                </div>
-                
-            </div>
-        </section>
-
+      <section id="modal">
+        <div id="affiche" class="affiche col-8">
+          <div class="modal-header">
+            <h3 id="titre" class="textBorder"></h3>
+            <h5 id="capture" class="col-10 m-3"></h5>
+            <p id="famille"></p>
+          </div>
+          <div class="content">
+            <p id="description" class="col-6"></p>
+            <img id="image" class="col-6" src="" alt="" />
+          </div>
+        </div>
+      </section>
     </main>
-    
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
     <script src="scripts/app.js"></script>
-</body>
+  </body>
 </html>
