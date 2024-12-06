@@ -22,7 +22,7 @@ btnSearch.addEventListener("click", () => {
     capture.innerText = "";
     description.innerText = "";
     famille.innerText = "";
-    img.innerText = "";
+    img.src = "";
     //Renvoie une alerte si ce n'est pas le cas
     return alert("Saisir une valeur valide");
   }
