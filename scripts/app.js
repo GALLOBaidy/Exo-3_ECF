@@ -80,7 +80,7 @@ function show(pokemons) {
   description.innerText = descriptions; //+ "<br>" + des2;
   img.src = `https://unpkg.com/pokeapi-sprites@2.0.2/sprites/pokemon/other/dream-world/${search.value}.svg`;
   if (img.src == null || img.src == undefined) {
-    img.src = "../img/img/Pas_d'image_disponible.svg";
+    img.src = "../img/Pas_d'image_disponible.svg";
   }
   affiche.style.borderColor = color;
 }
